@@ -5,11 +5,10 @@
 
   <ul>
     {{#each model as |rental|}}
-      <li>{{rental.owner}}'s {{rental.type}} in {{rental.city}}</li>
+      {{rental-tile rental=rental}}
     {{/each}}
   </ul>
 
   {{#link-to 'about'}}About{{/link-to}} <br>
-  {{#link-to 'contact'}}Click here to contact us!{{/link-to}} <br>
-  {{#link-to '/'}}Home{{/link-to}}
+  {{#link-to 'contact'}}Click here to contact us!{{/link-to}}
 </div>
