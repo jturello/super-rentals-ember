@@ -15,5 +15,4 @@ export default Ember.Route.extend({
       this.transitionTo('city', params.city);
     }
   }
-
 });
