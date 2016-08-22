@@ -14,6 +14,9 @@ export default Ember.Route.extend({
         return city.save();
       });
       this.transitionTo('city', params.city);
+    },
+    destroyCity(city) {
+      
     }
   }
 });

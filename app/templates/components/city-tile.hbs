@@ -1,1 +1,19 @@
-{{yield}}
+<h4>{{city.name}}'s 'Detail Page</h4>
+
+Country: {{city.country}}
+
+<br>
+
+Rentals available in {{city.name}}:
+
+<br>
+
+<ul>
+  {{#each city.rentals as |rental|}}
+  <li>{{#link-to 'rental' rental.id}}{{rental.owner}}'s {{rental.type}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+<br>
+
+<button {{action 'destroyCity' city}}>Delete</button>
