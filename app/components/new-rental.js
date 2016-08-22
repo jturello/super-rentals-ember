@@ -12,8 +12,8 @@ export default Ember.Component.extend({
         owner: this.get('owner') ? this.get('owner') : "",
         city: this.get('city') ? this.get('city') : "",
         type: this.get('type') ? this.get('type') : "",
+        bedrooms: this.get('bedrooms') ? this.get('bedrooms') : "",
         image: this.get('image') ? this.get('image') : "",
-        bedrooms: this.get('bedrooms' ? this.get('bedrooms') : ""),
       };
       debugger;
       this.set('addNewRental', false);
